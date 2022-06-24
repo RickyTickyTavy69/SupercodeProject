@@ -1,0 +1,382 @@
+/*/////////////////////////////////////////////////////STYLES/////////////////////////////////////////////////////////*/
+
+body {
+  margin: 0;
+  background-color: #e6cdeb;
+}
+
+/*======================================GAME====================================*/
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 10rem;
+  padding-bottom: 5rem;
+  padding-left: 27%;
+  padding-right: 27%;
+}
+
+.container__box-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.container__box-button {
+  height: 9rem;
+  width: 9rem;
+  background-image: url("../public/box.png");
+  cursor: pointer;
+  background-size: cover;
+}
+
+.boxButtonContainer {
+  border: 3px solid transparent;
+  padding-top: 3%;
+  padding-bottom: 3%;
+}
+
+.boxButtonContainer:hover {
+  border-bottom: 3px solid black;
+  border-top: 3px solid black;
+}
+
+.container__box-button-lost {
+  height: 9rem;
+  width: 9rem;
+  background-image: url("../public/shit.png");
+  background-size: cover;
+}
+
+.container__box-button-won {
+  height: 9rem;
+  width: 9rem;
+  background-image: url("../public/Primogem.png");
+  background-size: cover;
+}
+
+/*======================================NAVBAR__COMPONENT====================================*/
+
+.navigation {
+  background-color: #b4d7db;
+  border-bottom: 3px solid red;
+  list-style-type: none;
+  display: flex;
+  font-size: 1.2em;
+  justify-content: space-between;
+  padding-left: 2%;
+  padding-right: 8%;
+}
+
+.list {
+  list-style: none;
+  display: flex;
+  gap: 6rem;
+  align-items: center;
+}
+
+.registerList_Button a {
+  transition: 0.3s;
+  color: black;
+  font-weight: 600;
+  text-decoration: none;
+  border: 3px solid #db56d7;
+  border-radius: 15px;
+  padding: 0.5em;
+}
+
+.registerList_Button a:hover {
+  border: 3px solid #541252;
+  font-size: 1.08em;
+}
+
+/*=====================================================REGISTER=======================================*/
+
+.registerContainer {
+  display: flex;
+  flex-direction: column;
+  padding-left: 35%;
+  padding-right: 35%;
+  padding-top: 6rem;
+}
+
+/*==================================================Autofill Background==================================================================*/
+
+.registerContainer__input:-webkit-autofill:focus {
+  border: 3px solid #11bf96;
+  -webkit-text-fill-color: black;
+  -webkit-box-shadow: 0 0 0px 1000px #e0bde8 inset;
+  box-shadow: 0 0 0px 1000px #e0bde8 inset;
+  transition: #e6cdeb 5000s ease-in-out 0s;
+}
+
+.registerContainer__input:-webkit-autofill {
+  border: 3px solid #db56d7;
+  -webkit-text-fill-color: black;
+  -webkit-box-shadow: 0 0 0px 1000px #e6cdeb inset;
+  box-shadow: 0 0 0px 1000px #e6cdeb inset;
+  transition: #e6cdeb 5000s ease-in-out 0s;
+}
+
+/*======================================================================================================================================*/
+
+.registerContainer__input {
+  margin-top: 2rem;
+  height: 2rem;
+  border: 3px solid #db56d7;
+  border-radius: 15px;
+  background: #e6cdeb;
+  color: black;
+  font-weight: 800;
+  padding: 0.5em;
+}
+
+.registerContainer__input:focus {
+  border: 3px solid #11bf96;
+  outline: none;
+  background: #e0bde8;
+}
+
+.registerContainer__input-button {
+  margin-top: 2rem;
+  font-size: 1.4em;
+  padding: 0.4em;
+  border: 3px solid #db56d7;
+  border-radius: 15px;
+  background: #e6cdeb;
+  cursor: pointer;
+}
+
+.registerContainer__input-button:hover {
+  border: 3px solid #11bf96;
+  background: #e0bde8;
+}
+
+/*//////////////////////////////////////////////////LOGIN/////////////////////////////////////////////////////////*/
+
+/*/ /////////////////////////////////////////////////////ZEROWINDOW/////////////////////////////////////////////////////*/
+
+.zeroWindow {
+  width: 30%;
+  text-align: center;
+  margin-left: 35%;
+  margin-top: 10%;
+  border: 3px solid #ab274f;
+  font-size: 1.3em;
+  color: black;
+  position: absolute;
+  background: #ab677c;
+  font-weight: 600;
+}
+
+/*//////////////////////////////////////////////////////PRIZETABLE/////////////////////////////////////////////////////*/
+
+.prizeTable {
+  display: flex;
+  flex-direction: column;
+  width: 75%;
+  color: #000;
+  font-weight: 600;
+  border: 3px solid #ab274f;
+  border-radius: 15px;
+  padding: 1%;
+  font-size: 1.4em;
+  line-height: 1.2;
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+.prizeTable_top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.prizeTable_bottom {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.priceTable_line {
+  position: relative;
+}
+
+.priceTable_line::before {
+  content: url("../public/arrow.png");
+  display: block;
+  position: absolute;
+  left: -3em;
+  top: -1.2em;
+  transform: scale(0.6);
+}
+
+/*/ /////////////////////////////////////////////////////GRATZ////////////////////////////////////////////////////////*/
+
+.title {
+  text-align: center;
+  margin-bottom: 5rem;
+  margin-top: 3rem;
+  font-size: 1.3em;
+}
+
+.messageContainer__form {
+  display: flex;
+  flex-direction: column;
+  padding-left: 30%;
+  padding-right: 30%;
+}
+
+.messageContainer__form_item {
+  margin-top: 2rem;
+  height: 2rem;
+  border: 3px solid #db56d7;
+  border-radius: 15px;
+  background: #e6cdeb;
+  color: black;
+  font-weight: 800;
+  padding: 0.5em;
+}
+
+.messageContainer__form_item:focus {
+  border: 3px solid #11bf96;
+  outline: none;
+  background: #e0bde8;
+}
+
+.messageContainer__form_item_button {
+  margin-top: 2rem;
+  font-size: 1.4em;
+  padding: 0.4em;
+  border: 3px solid #db56d7;
+  border-radius: 15px;
+  background: #e6cdeb;
+  cursor: pointer;
+}
+
+.messageContainer__form_item_button:hover {
+  border: 3px solid #11bf96;
+  background: #e0bde8;
+}
+
+.messagePlace {
+  font-size: 1.4em;
+}
+
+.messageContainer__form_item_radio {
+  margin-top: 1rem;
+  margin-left: 2rem;
+}
+
+.messageContainer__form_radio-container {
+  text-align: center;
+}
+
+.messageContainer_textarea {
+  resize: none;
+}
+
+.messageContainer__form_item:-webkit-autofill:focus {
+  border: 3px solid #11bf96;
+  -webkit-text-fill-color: black;
+  -webkit-box-shadow: 0 0 0px 1000px #e0bde8 inset;
+  box-shadow: 0 0 0px 1000px #e0bde8 inset;
+  transition: #e6cdeb 5000s ease-in-out 0s;
+}
+
+.messageContainer__form_item:-webkit-autofill {
+  border: 3px solid #db56d7;
+  -webkit-text-fill-color: black;
+  -webkit-box-shadow: 0 0 0px 1000px #e6cdeb inset;
+  box-shadow: 0 0 0px 1000px #e6cdeb inset;
+  transition: #e6cdeb 5000s ease-in-out 0s;
+}
+
+/*////////////////////////////////////////////////////////PrizeWindow/////////////////////////////////////////////////////////////////////////*/
+
+.prizeWindow {
+  width: 30%;
+  text-align: center;
+  margin-left: 35%;
+  margin-top: 10%;
+  border: 3px solid #ab274f;
+  font-size: 1.3em;
+  color: black;
+  position: absolute;
+  background: #ab677c;
+  font-weight: 600;
+  padding-bottom: 1.5rem;
+}
+
+.prizeWindowButtons {
+  padding-left: 30%;
+  padding-right: 30%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.prizeWindow_button {
+  height: 2rem;
+}
+
+/*/ ////////////////////////////////////////////////////////////STATISTICCONTAINER//////////////////////////////////////////////////////////////*/
+
+.StatisticContainer {
+  font-weight: bold;
+  font-size: 1.6em;
+  display: flex;
+  gap: 15%;
+  padding-left: 30%;
+  padding-right: 30%;
+}
+
+/*///////////////////////////////////////////////////////////////BOXIMG////////////////////////////////////////////////////////////////////*/
+
+.mainBoxImg {
+  height: 100%;
+  cursor: pointer;
+}
+
+/*////////////////////////////////////////////////////////////ADOPTIV////////////////////////*/
+
+@media (max-width: 1800px) {
+  body {
+    font-size: 0.9em;
+  }
+
+  /*======================================PrizeTable===================================================================*/
+
+  .prizeTable {
+    font-size: 1.3em;
+  }
+
+  .priceTable_line::before {
+    transform: scale(0.4);
+    left: -3em;
+    top: -1.6em;
+  }
+}
+
+@media (max-width: 1500px) {
+  body {
+    font-size: 0.8em;
+  }
+
+  /*======================================PrizeTable===================================================================*/
+
+  .priceTable_line::before {
+    transform: scale(0.4);
+    left: -3.5em;
+    top: -1.8em;
+  }
+
+  .list {
+    list-style: none;
+    display: flex;
+    align-items: center;
+  }
+
+  .navbarList__item {
+    border: 1px solid black; /* откуда берутся padding слева и справа*/
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "PORT": "5000",
+  "mongoURL": "mongodb+srv://Artem:hailtotheking666@cluster0.y04ja.mongodb.net/Boxes_Game_Project?retryWrites=true&w=majority",
+  "mongoURLv2": "mongodb://Artem:hailtotheking666@cluster0-shard-00-00.y04ja.mongodb.net:27017,cluster0-shard-00-01.y04ja.mongodb.net:27017,cluster0-shard-00-02.y04ja.mongodb.net:27017/Boxes_Game_Project?ssl=true&replicaSet=atlas-s7ulli-shard-0&authSource=admin&retryWrites=true&w=majority",
+  "JWT_ACCESS_SECRET": "jwt-secret-key",
+  "JWT_REFRESH_SECRET": "jwt-refresh-secret-key",
+  "API_URL": "http://localhost:5000",
+  "CLIENT_URL": "http://localhost:3000"
+}
